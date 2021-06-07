@@ -79,6 +79,18 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+h2 {
+    color: crimson;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -186,6 +198,33 @@ footer p:hover{
         width: 350px;
     }
 }
+
+/* practicum section styling */
+
+.main {
+    display: flex;
+    
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+  }
+  
+  .section {
+    width: 100%;
+    height: 100%;
+    
+    padding-bottom: 5px;
+  }
+  
+  iframe {
+    width: 90%;
+    height: 45vh;
+    
+    
+    padding-bottom: 5px;
+
+  }
 
 @media (max-width: 991px) {
     .max-width{
@@ -307,44 +346,4 @@ footer p:hover{
 }
 
 
-/* practicum section styling */
-.practicum .title::after{
-    content: "what I did";
-}
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  
-  .section {
-    width: 50%;
-    height: 100%;
-    
-    padding-bottom: 5px;
-  }
-  
-  iframe {
-    width: 70%;
-    height: 38vh;
-    float: right;
-    
-    padding-bottom: 5px;
-
-  }
-
-img {
-    
-    height: 38vh;
-    float: right;
-    width: 560;
-    height: 315;
-    padding-bottom: 5px;
-}
-
-/* #book .iframe {
-    align-items: center;
-} */
