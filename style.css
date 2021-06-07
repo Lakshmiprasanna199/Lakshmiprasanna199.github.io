@@ -35,12 +35,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .practicum, .skills, .teams, .contact, footer{
+.about, .qualifications, .skills, .projects, .contact, .footer, .practicum{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.practicum .practicum-content,
+.qualifications .serv-content,
 .skills .skills-content,
+.practicum .practicum-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +115,7 @@ section .title::after{
 .navbar .menu li a{
     display: block;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
@@ -165,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/lp1.jpg") no-repeat center;
+    background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -258,7 +259,56 @@ section .title::after{
     background: none;
 }
 
+/* qualifications section styling */
+.qualifications, .projects{
+    color:#fff;
+    background: #111;
+}
+.qualifications .title::before,
+.projects .title::before{
+    background: #fff;
+}
+.qualifications .title::after,
+.projects .title::after{
+    background: #111;
+    content: "what i learnt";
+}
+.qualifications .serv-content .card{
+     background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    
+}
+.qualifications .serv-content .card:hover{
+    background: crimson;
+}
+.qualifications .serv-content .card .box{
+    transition: all 0.3s ease;
+    
+}
+.qualifications .serv-content .card:hover .box{
+    transform: scale(1.05);
+   
+}
 
+.qualifications .serv-content .card:hover .text{
+    color: #fff;
+  
+}
+.qualifications .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: crimson;
+}
+
+.qualifications .serv-content .card p{
+    padding: 5px;
+
+}
 /* skills section styling */
 
 .skills .title::after{
@@ -271,7 +321,6 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    padding-right: 200px;
 }
 .skills .skills-content .left p{
     text-align: justify;
@@ -284,7 +333,7 @@ section .title::after{
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
-    /* border-radius: 6px; */
+    border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
@@ -335,45 +384,85 @@ section .title::after{
     width: 70%;
 }
 
-
-/* practicum section styling */
-.practicum .title::after{
-    content: "what I did";
+/* projects section styling */
+.projects .title::after{
+    content: "what i did";
+}
+.projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover{
+    background: crimson;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: #fff;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  
-  .section {
-    width: 50%;
-    height: 100%;
-    
-    padding-bottom: 5px;
-  }
-  
-  iframe {
-    width: 70%;
-    height: 38vh;
-    float: right;
-    
-    padding-bottom: 5px;
-
-  }
-
-.picture .img {
-    width: 70%;
-    height: 38vh;
-    float: right;
-    
-    padding-bottom: 5px;
-
-  }
-
+.projects .carousel .card .box a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card .box a:hover{
+    color: crimson;
+    background-color:  #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
 
 /* contact section styling */
 .contact .title::after{
@@ -384,7 +473,7 @@ section .title::after{
 }
 .contact .contact-content .text{
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 .contact .contact-content .left p{
@@ -553,7 +642,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .qualifications .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -577,7 +666,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .qualifications .serv-content .card{
         width: 100%;
     }
 }
@@ -614,139 +703,40 @@ footer span a:hover{
 }
 
 
+/* practicum section styling */
+.practicum .title::after{
+    content: "what I did";
+}
 
-    .section-title {
-        font-size: 2rem;
-        font-weight: 300;
-        color: black;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        letter-spacing: .2rem;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .section-title span {
-        color: crimson;
-    }
-
-
-/* contact Section */
-#contact .contact {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-#contact .contact-items {
-	width: 400px;
-}
-#contact .contact-item {
-	width: 80%;
-	padding: 20px;
-	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: .3s ease box-shadow;
-}
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
-}
-#contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-#contact .contact-info h1 {
-	font-size: 20px;
-	font-weight: 300;
-	margin-bottom: 5px;
-	padding: 10px;
-}
-#contact .contact-info h2 {
-	font-size: 15px;
-	line-height: 2px;
-	font-weight: 500;
-}
-/*End contact Section */
-
-/* contact  */
-#contact .contact {
-    flex-direction: column;
-    padding: 100px 0;
-    align-items: center;
-    justify-content: center;
-    min-width: 20vh;
-}
-#contact .contact-items {
-    width: 100%;
+.main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0;
-}
-#contact .contact-item {
-    width: 30%;
-    margin: 0;
-    flex-direction: row;
-}
-#contact .contact-item .icon {
-    height: 100px;
-    width: 100px;
-}
-#contact .contact-item .icon img {
-    object-fit: contain;
-    padding-left: 2px;
-}
-#contact .contact-item .contact-info {
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .section {
+    width: 50%;
+    height: 100%;
+    
+    padding-bottom: 5px;
+  }
+  
+  iframe {
+    width: 70%;
+    height: 38vh;
+    float: right;
+    
+    padding-bottom: 5px;
 
-}
+  }
 
-#contact .contact-item .h5 {
-    font-size: small;
-    font-style: bold;
-}
-/* End contact  */
+.picture .img {
+    width: 70%;
+    height: 38vh;
+    float: right;
+    
+    padding-bottom: 5px;
 
-
-/* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
-/* header */
-#header .hamburger {
-    display: none;
-}
-
-#header .nav-list ul {
-    position: initial;
-    display: block;
-    height: auto;
-    width: fit-content;
-    background-color: transparent;
-}
-#header .nav-list ul li {
-    display: inline-block;
-}
-#header .nav-list ul li a {
-    font-size: 1.8rem;
-}
-#header .nav-list ul a:after {
-    display: none;
-}
-/* End header */
-
-#mores .more-bottom .more-item {
-    flex-basis: 40%;
-    margin: 5%;
-}
-
-
-}
-
+  }
