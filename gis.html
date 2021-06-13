@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="book.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -25,7 +25,17 @@
                 <li><a href="index.html#about" class="menu-btn">About</a></li>
                 <li><a href="index.html#qualifications" class="menu-btn">Qualification</a></li>
                 <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
-                <li><a href="index.html#projects" class="menu-btn">Projects</a></li>
+                    <div class="dropdown">
+                        <li><a href="#projects" class="menu-btn">Projects</a></li>
+                        
+                        <div class="dropdown-content">
+                            <a href="practicum.html">Pacticum</a>
+                            <a href="connect4.html">Connect 4</a>
+                            <a href="bookreviews.html">Book Reviews</a>
+                            <a href="escape.html">Try to escape</a>
+                            <a href="gis.html">GIS</a>
+                        </div>
+                    </div> 
                 <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -37,114 +47,73 @@
 
     <!-- practicum section start -->
 
+    
     <section class="practicum" id="practicum">
-
+    <div class="gis">
       <div class="max-width">
-        <h2 class="title">PRACTICUM</h2> 
+        <h2 class="title">Sub Scheme on formulation of GIS 
+            based master plan for AMRUT cities </h2> 
 
-        <center> <h1 style="color:crimson;" "font-size:larger"> STUDENT - COUNSELOR PROJECT </h1> </center> 
-
-        <main class='main'>
-
-            <section class='left section'>
-                <h2 style="color:crimson;"> Sprint 1 </h2> <br>
-                <ul>
-                    <li> User stories were created after we(our team) had a thorough understanding of the whole project </li><br> 
-                    <li> We then developed a prototype based on those user stories. </li><br> 
-                    <li> Finally, we divided the work between our team </li>
-                </ul>
-            </section>
-
-            <section class='right section'>
-                <iframe src="https://www.youtube.com/embed/j9_Cu70D-MY"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </section>
-
-        </main>
-
-        <main class='main'>
-
-            <section class='left section'>
-                <h2 style="color:crimson;"> Sprint 2 </h2> <br>
-                <ul>
-                    <li> I worked on the UI portion of user stories 1 and 2 </li><br> 
-                    <li> Static emoji page was implemented, and motivational material was displayed </li><br> 
-                    <li> I merged my pages to the home page at the end of the week to ensure that it was working properly </li>
-                </ul>
-            </section>
-
-            <section class='right section'>
-                <iframe src="https://www.youtube.com/embed/1MYLLAmNc6k" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; 
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-
-        </main>
-
-        <main class='main'>
-            <section class='left section'>
-                <h2 style="color:crimson;"> Sprint 3 </h2> <br>
-                <ul>
-                    <li>Gone through the concepts of backend part (AWS, Dynamo bd, S3)</li><br> 
-                    <li>Learned how to implement the backend part</li><br> 
-                    <li>Implemented Unicorn project in AWS</li><br> 
-                   
-                </ul>
-            </section>
-
-            <section class='right section'>
-                    <iframe src="./images/unicorn.jpeg" >
-                </iframe>
+       
 
 
-            </section>    
-        </main>
+            <ul>
+                <li> It is government based project. </li>
+                <li> Atal Mission for Rejuvenation and Urban Transformation (AMRUT) was 
+                    launched by Prime Minister of India Narendra Modi in June 2015 with the focus to 
+                    establish infrastructure that could ensure adequate robust sewage networks and water 
+                    supply for urban transformation by implementing urban revival projects. </li>
+                <li> The main aim of this mission is to develop underlying cities and also digitizing the cities newly </li>
+                <li> It is also to create infrastructure to provide basic services to households and build amenities</li>
+                <li> This will improve the quality of life of all especially the poor and the disadvantaged</li>
+                <li> It has a country wide coverage of Five hundred (500) cities having a population greater than
+                    one Lakh, cites situated on stems of main rivers , cities located in hilly areas, islands ,tourist
+                    areas and a few capital cities.</li>
+                <li> Nalgonda is one of those AMRUT cities</li>
+            </ul>
 
-        <main class='main'>
-            <section class='left section'>
-                <h2 style="color:crimson;"> Sprint 4 </h2> <br>
-                <ul>
-                    <li>I worked on the user interface for the counsellors page</li><br> 
-                    <li>Backend for scheduling a meeting and sending an automated email to the counsellor was implemented.</li><br> 
-                  
-                   
-                </ul>
-            </section>
+                <br>
+             
+            <p>
+                <b>Technologies used:</b>   QGIS <br><br>
+               
+               <b> Flow of work in preparing GIS based map:</b>
+                
+            </p> 
+            
+            <div class="image">
+            <img src="./images/flow.png" >
+            </div>
 
-            <section class='right section'>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/h1tjxqjTQng" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; 
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <ul>
+                <li>In this project for buildings we gave the following attributes </li>
+                    <ul>
+                        <li> Building id </li>
+                        <li> Construction type </li>
+                        <li> Locality name </li>
+                        <li> Number of floors </li>
+                        
+                    </ul>
+                <li>In this project for roads we gave the following attributes</li>
+                    <ul>
+                        <li> Locality </li>
+                        <li> Road Id </li>
+                        <li> Type of road </li>
+                        
+                    </ul>
+            </ul>
 
-            </section>    
-        </main>
 
+        </div>
 
-        <main class='main'>
-            <section class='left section'>
-                <h2 style="color:crimson;"> Sprint 5 </h2> <br>
-                <ul>
-                    <li>I worked on the user interface for the footer section</li><br>
-                    <li>And also worked on help button where student can post there quaries which will directly sent to admin</li><br>  
-                    <li>Implemented rest APIs as part of backend</li><br>
-                     
-                </ul>
-            </section>
-
-            <section class='right section'>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4xKRwm9RFPE" title="YouTube video player"
-                 frameborder="0" allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            </section>    
-        </main>
-
-      </div>
+    </div>
     </section>
 
     <!-- practicum section end -->
+
+    
+    
 
      <!-- footer section start -->
     <footer>

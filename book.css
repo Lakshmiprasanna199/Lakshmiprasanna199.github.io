@@ -28,7 +28,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .max-width{
     max-width: 1300px;
@@ -54,9 +54,9 @@ section .title{
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;
-    padding-top: 50px;
+    padding-top: 120px;
 }
 section .title::before{
     content: "";
@@ -347,3 +347,149 @@ footer p:hover{
 
 
 
+.gis {
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: larger;
+}
+
+.gis ul li {
+    padding:  10px 0px;
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+.gis p {
+    font-size: x-large;
+}
+
+/* qualifications section styling */
+.qualifications, .projects{
+    color:#fff;
+    background: #111;
+    /* background-image: "images/profile-1.jpg"; */
+    
+  
+}
+.qualifications .title::before,
+.projects .title::before{
+    background: #fff;
+}
+.qualifications .title::after,
+.projects .title::after{
+    background: #111;
+    content: "what i learnt";
+}
+.qualifications .serv-content .card{
+     background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    
+}
+.qualifications .serv-content .card:hover{
+    background: crimson;
+}
+.qualifications .serv-content .card .box{
+    transition: all 0.3s ease;
+    
+}
+.qualifications .serv-content .card:hover .box{
+    transform: scale(1.05);
+   
+}
+
+.qualifications .serv-content .card:hover .text{
+    color: #fff;
+  
+}
+.qualifications .serv-content .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: crimson;
+}
+
+.qualifications .serv-content .card p{
+    padding: 5px;
+
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+.qualifications .max-width .serv-content .img {
+    width: 350px;
+    height: 350px;
+    padding-bottom: 50px;
+}
+
+
+.dropdown {
+    /* float: left; */
+    overflow: hidden;
+    float: right;
+
+  }
+  
+  .menu .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+
+  
+  .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:crimson;
+    min-width: 160px;
+   
+    z-index: 1;
+  }
+  
+  .menu .dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: larger;
+  }
+  
+  .menu .dropdown-content a:hover {
+    background-color:crimson;
+    color: black;
+  }
+  
+  .menu .dropdown:hover .dropdown-content {
+    display: block;
+  }
