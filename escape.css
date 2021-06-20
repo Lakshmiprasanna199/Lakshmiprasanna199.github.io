@@ -328,11 +328,12 @@ footer p:hover{
   }
   
   iframe {
-    width: 70%;
-    height: 38vh;
-    float: right;
+    width: 55%;
+    height: 60vh;
+    float: center;
+    /* width: 100%; */
     
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 
   }
 
@@ -417,4 +418,12 @@ img {
 
 p {
     word-spacing: smooth;
+}
+
+h2  {
+    color: crimson;
+}
+
+span {
+    color: crimson;
 }
